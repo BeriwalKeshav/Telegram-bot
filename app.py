@@ -63,7 +63,7 @@ def error(bot, update):
 
 bot=Bot(TOKEN) 
 try:# to prevent flodding, when the a lot of request calls try to call the webhook again and again
-    bot.set_webhook('https://kb04-newsbot.herokuapp.com/' + TOKEN)
+    bot.set_webhook('https://kb-news-bot.herokuapp.com/' + TOKEN)
 except Exception as e:
     print(e)
 dp=Dispatcher(bot,None)
